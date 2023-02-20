@@ -1,86 +1,182 @@
-body {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 100vh;
-    margin: 0;
-    background: #222;
-    font-family: 'Open Sans', sans-serif;
-    font-size: 120%;
-    background-image: url(https://images.unsplash.com/photo-1505567745926-ba89000d255a?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=871&q=80);
+* {
+    box-sizing: border-box;
 }
 
+body {
+    margin: 0;
+    padding: 0;
+}
+
+.banner-img {
+    background-image: url(img/email\ bg.PNG);
+    background-size: cover;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    height: 100vh;
+    width: 100%;
+    filter: blur(2px);
+}
+
+#bg-color {
+    background: #f8f1f1ef;
+}
+
+
 .card {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    z-index: 5;
     background: #000000d0;
-    color: #fff;
     padding: 2em;
     border-radius: 30px;
     width: 100%;
     max-width: 420px;
-    margin: 1em;
-}
-
-.search {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
-
-button {
-    margin: 0.5em;
-    border-radius: 50%;
-    border: none;
-    height: 44px;
-    width: 44px;
-    outline: none;
-    background: #7c7c7c2b;
     color: #fff;
-    cursor: pointer;
-    transition: 0.2s ease-in-out;
 }
 
-input.search-bar {
-    border: none;
-    outline: none;
-    padding: 0.4em 1em;
-    border-radius: 24px;
-    background: #7c7c7c2b;
-    color: #fff;
-    font-family: inherit;
-    font-size: 105%;
-    width: calc(100% - 100px);
-}
-
-button:hover {
-    background: #7c7c7c6b;
-}
-
-h1.temp {
-    margin: 0;
-    margin-bottom: 0.5em;
-}
-
-.description {
-    text-transform: capitalize;
-    margin-left: 8px;
-}
-
-.flex {
-    display: flex;
-    align-items: center;
-}
-
-.weather.loading {
-    visibility: hidden;
-    max-height: 20px;
-    position: relative;
-}
-
-.weather.loading:after {
-    visibility: visible;
-    content: "loading...";
-    color: #fff;
+.card-2 {
     position: absolute;
-    top: 0;
-    left: 20px;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    z-index: 5;
+    background: #ffff;
+    padding: 3em;
+    width: 100%;
+    max-width: 450px;
+    
+}
+
+.card-3 {
+    position: absolute;
+    top: 85%;
+    left: 50%;
+    transform: translate(-50%,-85%);
+    z-index: 5;
+    background: #ffff;
+    width: 100%;
+    max-width: 450px;
+    
+}
+
+.search .title {
+   
+    text-align: center;
+}
+
+.search .text-content {
+    text-align: center;
+}
+
+.search img {
+    margin-left: 40%;
+}
+
+.mail-icon {
+    margin-left: 16%;
+    cursor: pointer;
+}
+
+.bottom-text .text-content {
+    text-align: center;
+}
+
+.microsoft {
+    display: flex;
+    align-items: center;
+   
+}
+
+.microsoft h2 {
+    font-family: Arial, Helvetica, sans-serif;
+    color: #a09898;
+    font-size: 20px;
+}
+
+
+.microsoft.title {
+
+    color: #0000;
+    
+}
+
+.header h1 {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 25px;
+}
+
+.form-control input {
+    outline: none;
+    border: none;
+    border-bottom: 1px solid black;
+    width: 100%;
+    padding-bottom: 3px;
+}
+
+.account p {
+    color: #474444ef;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 14px;
+}
+
+.no-access p {
+    color:  #0066ff;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 14px;
+}
+
+.no-access p, a {
+    text-decoration: none;
+    color: #0066ff;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 14px;
+    cursor: pointer;
+
+}
+
+
+.button {
+    display: flex;
+    justify-content: flex-end;
+    
+}
+
+.button .btn-back {
+    background-color: rgb(141, 137, 137);
+    border: none;
+    padding: 8px;
+    width: 100px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bolder;
+    cursor: pointer;
+}
+
+.button .btn-next {
+    background-color:   #0066ff;
+    border: none;
+    color: #fff;
+    padding: 8px;
+    width: 100px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bolder;
+    cursor: pointer;
+}
+
+.bottom {
+    display: flex;
+    align-items: center;
+    
+}
+
+.bottom .img-responsive{
+    margin-left: 100px;
+}
+
+.bottom .text-content {
+    font-family: Arial, Helvetica, sans-serif;
+    cursor: pointer;
+  
 }
